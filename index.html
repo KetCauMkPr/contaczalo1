@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông báo Chuyển hướng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .notification {
+            background-color: #f8f9fa;
+            border: 1px solid #dadce0;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .notification h2 {
+            margin: 0;
+        }
+        .content p {
+            margin: 0;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+        /* Thêm các thuộc tính mới */
+        .container, .notification, .content {
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+        }
+        .notification {
+            background-color: #e6f2ff;
+        }
+        /* Thêm phần tử hiển thị thời gian */
+        #time {
+            text-align: right;
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        /* Thêm phần tử chân trang */
+        footer {
+            background-color: #fdfdfd;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Thêm phần tử hiển thị thời gian -->
+        <div id="time"></div>
+        <div class="notification">
+            <h2>Thông báo Chuyển hướng</h2>
+        </div>
+        <div class="content">
+            <img src="https://stc-zaloprofile.zdn.vn/pc/v1/images/logo.svg" alt="">
+           <P> CẢM ƠN BẠN ĐÃ DÙNG PHẦN MỀM KETCAUMK-PR , NẾU CẦN THÌ HÃY KẾT BẠN ZALO: 0867544809</p>
+            
+            <p>Nếu bạn không muốn đến trang đó, bạn có thể <a href="https://sites.google.com/view/ketcaumk-pr/trang-ch%E1%BB%A7?authuser=0">QUAY LẠI TRANG CHỦ</a>.</p>
+            <img src="https://scontent-hkg4-2.xx.fbcdn.net/v/t39.30808-6/362908400_209389618763103_4303974182004399907_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=0XZ3A8jGQM4AX96zicr&_nc_ht=scontent-hkg4-2.xx&oh=00_AfACl9ASZi0-KrZ005OZkf-9o3TFPwwkQlMKsTW-cbOmNQ&oe=64C66213" alt="">
+        </div>
+    </div>
+    <!-- Thêm mã JavaScript để cập nhật thời gian -->
+    <script>
+      function updateTime() {
+          var currentTime = new Date();
+          var hours = currentTime.getHours();
+          var minutes = currentTime.getMinutes();
+          if (minutes < 10) minutes = "0" + minutes;
+          var timeString = "Thời gian hiện tại: " + hours + ":" + minutes + " ";
+          document.getElementById("time").innerHTML = timeString;
+      }
+      setInterval(updateTime, 1000);
+    </script>
+    <!-- Thêm phần tử chân trang -->
+    <footer>
+      Developer by  Minh Khoa<br>
+      Companion creative team<br>
+      Email Admin: tranminhkhoa.xd2002@gmail.com<br>
+      Contact Us: contact.ketcaumkpr@gmail.com<br>
+      Tel 1: 0867544809 Tel 2: 0825864379<br>
+      No Copy Right
+    </footer>
+</body>
+</html>
